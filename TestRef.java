@@ -1,0 +1,12 @@
+
+import java.io.IOException;
+
+public class TestRef {
+    static{
+        try {
+            Runtime.getRuntime().exec("gnome-calculator");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
